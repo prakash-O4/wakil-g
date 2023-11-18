@@ -1,0 +1,8 @@
+python-dotenv
+streamlit
+altair
+langchain
+openai
+faiss-cpu
+unstructured
+tiktoken

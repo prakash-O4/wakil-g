@@ -103,7 +103,7 @@ def main():
             st.session_state.disable_input = False
             st.session_state.chat_history.append((user_question, response['answer']))
         except:
-            st.write("Something went wrong, Please report at")
+            st.write("Something went wrong, Please report <a href='https://github.com/prakash-O4/wakil-g/issues' target='_blank'>here</a>")
         # st.write(st.session_state.chat_history)
         # print(response['source_documents'])
         # st.write(response['answer'])
@@ -138,7 +138,7 @@ def main():
         <div style="font-size: 12px; margin-top: 20px; color: #777;">
             Disclaimer: This is an AI application that responds based on <a href='https://www.moljpa.gov.np/en/wp-content/uploads/2018/12/Penal-Code-English-Revised-1.pdf' target='_blank'>provided documents</a>.. 
             The information provided may not have a direct source reference, and it is under maintenance. 
-            It may contain bugs or inaccuracies.
+            It may contain bugs or inaccuracies, if found so please report <a href='https://github.com/prakash-O4/wakil-g/issues' target='_blank'>here</a>.
         </div>
         """,
         unsafe_allow_html=True,

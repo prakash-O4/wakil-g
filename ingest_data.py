@@ -11,7 +11,7 @@ import streamlit as st
 
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
-def init_pinecone(path,namespace):
+def init_pinecone(path):
     try:
         pinecone.init(api_key=st.secrets["PINECONE_API_KEY"],environment="gcp-starter")
         # index = pinecone.Index(index_name="kanun")
@@ -91,3 +91,5 @@ def embed_text(text):
     vector = FAISS.from_texts(text,embedding=embeddings)
     FAISS.similarity_search_by_vector()
     return vector
+
+init_pinecone('source/Labor law.pdf')

@@ -2,3 +2,4 @@
 .streamlit/
 vectorstore.pkl
 practise/
+.DS_STORE
